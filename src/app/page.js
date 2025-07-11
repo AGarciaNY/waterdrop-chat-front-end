@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
-import styles from "./page.module.css";
-import styless from './chat.module.css'
+// import styles from "./page.module.css";
+import styles from './chat.module.css'
 import SignUpPage from "./components/signuppage/signup";
 import LogInPage from "./components/loginpage/login"
 import { useState } from "react";
@@ -33,15 +33,17 @@ export default function Home() {
 
 
     // chat
-    <div>
+    <div className={styles.messagepage}>
       {/* side panel */}
-      <div></div>
+      <div className={styles.sidepanel}></div>
+      
+      <div className={styles.messagingpanel}>
+        {/* messages */}
+        <div className={styles.messageholder}></div>
 
-      {/* messages */}
-      <div></div>
-
-      {/* inpute */}
-      <div></div>
+        {/* inpute */}
+        <div className={styles.massageinpute}></div>
+      </div>
     </div>
   );
 }

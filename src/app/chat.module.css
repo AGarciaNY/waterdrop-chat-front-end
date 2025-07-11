@@ -1,0 +1,25 @@
+.messagepage {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.sidepanel {
+    width: 30%;
+}
+
+.messagingpanel {
+    width: 70%;
+    height: 100%;
+}
+
+.messageholder {
+    background-color: #00FFDE;
+    height: 70%;
+
+}
+
+.massageinpute {
+    background-color: #CFCFCF;
+    height: 30%;
+}
